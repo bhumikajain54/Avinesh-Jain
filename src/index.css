@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+  --color-background: #0F0F0F;
+  --color-card: #1A1A1A;
+  --color-primary: #7C3AED;
+  --color-secondary-text: #A1A1AA;
+  
+  --font-inter: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-poppins: "Poppins", ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  body {
+    background-color: var(--color-background);
+    color: white;
+    font-family: var(--font-inter);
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-poppins);
+    font-weight: 700;
+  }
+}
+
+@layer utilities {
+  .text-purple-highlight {
+    color: var(--color-primary);
+  }
+  
+  .btn-primary {
+    background-color: var(--color-primary);
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 9999px;
+    transition: all 0.3s;
+  }
+  
+  .btn-primary:hover {
+    background-color: color-mix(in srgb, var(--color-primary), transparent 10%);
+    transform: scale(1.05);
+  }
+
+  .btn-primary:active {
+    transform: scale(0.95);
+  }
+  
+  .btn-outline {
+    border: 2px solid var(--color-primary);
+    color: var(--color-primary);
+    padding: 0.75rem 1.5rem;
+    border-radius: 9999px;
+    transition: all 0.3s;
+  }
+
+  .btn-outline:hover {
+    background-color: var(--color-primary);
+    color: white;
+    transform: scale(1.05);
+  }
+
+  .btn-outline:active {
+    transform: scale(0.95);
+  }
+
+  .card-gradient {
+    background-color: var(--color-card);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 1rem;
+    transition: all 0.5s;
+  }
+
+  .card-gradient:hover {
+    border-color: rgba(124, 58, 237, 0.5); /* primary */
+  }
+  
+  .glass-card {
+    background-color: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 1rem;
+  }
+}
+
+/* Custom Animations */
+.fade-in {
+  animation: fadeIn 0.8s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.scroll-smooth {
+  scroll-behavior: smooth;
+}
