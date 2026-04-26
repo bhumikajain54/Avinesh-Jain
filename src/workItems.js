@@ -25,6 +25,36 @@ export const portfolioItems = [
     "img": "/Work/Graphics/Mockup 3.png"
   },
   {
+    "title": "Elite",
+    "category": "Graphics",
+    "img": "/Work/Graphics/Elite.png"
+  },
+  {
+    "title": "Resort",
+    "category": "Graphics",
+    "img": "/Work/Graphics/Resort.png"
+  },
+  {
+    "title": "Sample Building 1",
+    "category": "Graphics",
+    "img": "/Work/Graphics/Sample Building 1.png"
+  },
+  {
+    "title": "Avinash Jain",
+    "category": "Graphics",
+    "img": "/Work/Graphics/Avi.png"
+  },
+  {
+    "title": "Jewellery",
+    "category": "Graphics",
+    "img": "/Work/Graphics/Jewellery.png"
+  },
+  {
+    "title": "Akshay Tritiya",
+    "category": "Graphics",
+    "img": "/Work/Graphics/Akshay Tritiya.png"
+  },
+  {
     "title": "adsgloria-20251229-0001",
     "category": "Adgloria",
     "img": "/Work/Adgloria PICs/adsgloria-20251229-0001.jpg"

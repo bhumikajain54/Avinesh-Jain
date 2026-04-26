@@ -9,6 +9,8 @@ const FeaturedWork = () => {
     { title: "Adgloria Brand Identity", img: "/Work/Adgloria PICs/adsgloria-20251229-0001.jpg", category: "Adgloria Vids", video: "/Work/Adgloria Vids/Adgloria.mp4" },
     { title: "School Promo Campaign", img: "/Work/School Social/School Poster 1.png", category: "School Social", video: "/Work/School Social/MP convent School Bari.mp4" },
     { title: "Zeecry Premium Showcase", img: "/Work/Zeecry PICs/Zeecry Ad 2.jpg", category: "Zeecry Vids", video: "/Work/Zeecry Vids/Zeecry3.mp4" },
+    { title: "Luxury Real Estate Branding", img: "/Work/Graphics/Sample Building 1.png", category: "Graphics" },
+    { title: "Festive Jewellery Launch", img: "/Work/Graphics/Akshay Tritiya.png", category: "Graphics" },
   ];
 
   return (
@@ -18,7 +20,7 @@ const FeaturedWork = () => {
           <h2 className="text-4xl md:text-5xl font-bold font-poppins">Featured Work</h2>
           <div className="w-20 h-1 bg-primary mx-auto rounded-full"></div>
         </div>
-        
+
         <div className="grid md:grid-cols-2 gap-12">
           {works.map((work, idx) => (
             <WorkCard key={idx} work={work} idx={idx} onSelect={setSelectedItem} />
@@ -85,7 +87,7 @@ const WorkCard = ({ work, idx, onSelect }) => {
   };
 
   return (
-    <motion.div 
+    <motion.div
       initial={{ opacity: 0, scale: 0.95 }}
       whileInView={{ opacity: 1, scale: 1 }}
       transition={{ delay: idx * 0.1, duration: 0.6 }}
@@ -97,16 +99,16 @@ const WorkCard = ({ work, idx, onSelect }) => {
     >
       {/* Background Glow */}
       <div className="absolute -inset-2 bg-primary/20 blur-2xl rounded-[32px] opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-      
+
       <div className="relative overflow-hidden rounded-3xl border border-white/5 bg-[#151515] h-[450px] shadow-2xl">
         {/* Shadow Overlay for Top (Fix for 'Chaturthi' text visibility) */}
         <div className="absolute top-0 left-0 right-0 h-20 bg-gradient-to-b from-black/40 to-transparent z-10 pointer-events-none"></div>
-        
+
         {work.video ? (
           <div className="w-full h-full">
-            <video 
+            <video
               ref={videoRef}
-              src={work.video} 
+              src={work.video}
               className="w-full h-full object-contain relative z-20"
               muted
               loop
@@ -115,25 +117,25 @@ const WorkCard = ({ work, idx, onSelect }) => {
             />
             {/* Blurred background for contain mode */}
             <img src={work.img} className="absolute inset-0 w-full h-full object-cover scale-110 blur-xl opacity-30" alt="" />
-            
+
             <div className="absolute top-6 right-6 z-30">
-               <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center shadow-lg transform group-hover:scale-110 transition-transform">
-                 <Play size={20} fill="white" className="text-white translate-x-0.5" />
-               </div>
+              <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center shadow-lg transform group-hover:scale-110 transition-transform">
+                <Play size={20} fill="white" className="text-white translate-x-0.5" />
+              </div>
             </div>
           </div>
         ) : (
           <div className="w-full h-full">
-            <img 
-              src={work.img} 
-              alt={work.title} 
+            <img
+              src={work.img}
+              alt={work.title}
               className="w-full h-full object-contain relative z-20 group-hover:scale-105 transition-transform duration-700"
             />
             {/* Blurred background for contain mode */}
             <img src={work.img} className="absolute inset-0 w-full h-full object-cover scale-110 blur-xl opacity-30" alt="" />
           </div>
         )}
-        
+
         {/* Bottom Details */}
         <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/95 via-black/60 to-transparent p-8 z-30">
           <span className="text-primary font-bold text-xs tracking-widest uppercase mb-2 block">{work.category}</span>

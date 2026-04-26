@@ -38,6 +38,24 @@ const CaseStudies = () => {
       result: "Drastically accelerated client approval rates by providing professional, tangible visualizations.",
       img: "/Work/Graphics/Mockup 3.png",
       reverse: true
+    },
+    {
+      title: "Architectural & Real Estate Branding",
+      goal: "Establish a premium visual identity for high-end property developments.",
+      process: "Integrating architectural visualization with luxury design aesthetics, focusing on sophisticated typography and realistic lighting.",
+      tools: "Photoshop, AI Visualization, Canva",
+      result: "Created a sense of exclusivity and increased potential investor engagement.",
+      img: "/Work/Graphics/Sample Building 1.png",
+      reverse: false
+    },
+    {
+      title: "Jewellery & Festive Marketing",
+      goal: "Drive high-value engagement and sales during peak festive seasons through luxury brand storytelling.",
+      process: "Crafting elegant visual narratives that highlight product craftsmanship and cultural significance using premium gold themes.",
+      tools: "Photoshop, Canva, Graphics Design",
+      result: "Achieved significant social reach and brand resonance during the Akshay Tritiya festival.",
+      img: "/Work/Graphics/Akshay Tritiya.png",
+      reverse: true
     }
   ];
 

@@ -68,7 +68,7 @@ const Navbar = () => {
                 {link.name}
               </a>
             ))}
-            <a href="/Avi GD Resume .pdf" target="_blank" className="text-xl font-medium text-secondary-text hover:text-white transition-colors">Download Resume</a>
+            <a href="/Avi GD Resume.pdf" target="_blank" className="text-xl font-medium text-secondary-text hover:text-white transition-colors">Download Resume</a>
             <a href="#contact" className="btn-primary text-center">Hire Me</a>
           </motion.div>
         )}
