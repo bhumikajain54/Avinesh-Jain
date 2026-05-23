@@ -13,13 +13,20 @@ const Contact = () => {
         </div>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
-          <a href="mailto:jainavi.er@gmail.com" className="btn-primary w-full sm:w-auto inline-flex items-center justify-center gap-3">
+          <a 
+            href="mailto:jainavi.er@gmail.com" 
+            onClick={(e) => {
+              e.preventDefault();
+              window.open('https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=jainavi.er@gmail.com', 'gmail-popup', 'width=800,height=600');
+            }}
+            className="btn-primary w-full sm:w-auto inline-flex items-center justify-center gap-3"
+          >
             <Mail size={22} /> Email Me
           </a>
-          <a href="https://wa.me/+919131123963" className="btn-outline w-full sm:w-auto inline-flex items-center justify-center gap-3">
+          <a href="https://wa.me/919131123963" target="_blank" rel="noopener noreferrer" className="btn-outline w-full sm:w-auto inline-flex items-center justify-center gap-3">
             <MessageSquare size={22} /> WhatsApp
           </a>
-          <a href="https://www.linkedin.com/in/aviijainm/" className="btn-outline w-full sm:w-auto inline-flex items-center justify-center gap-3">
+          <a href="https://www.linkedin.com/in/aviijainm/" target="_blank" rel="noopener noreferrer" className="btn-outline w-full sm:w-auto inline-flex items-center justify-center gap-3">
             <Linkedin size={22} /> LinkedIn
           </a>
         </div>
