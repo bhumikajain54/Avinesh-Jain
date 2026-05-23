@@ -1,5 +1,5 @@
 import React from 'react';
-import { Mail, MessageSquare, Camera } from 'lucide-react';
+import { Mail, MessageSquare, Linkedin } from 'lucide-react';
 
 const Contact = () => {
   return (
@@ -11,16 +11,16 @@ const Contact = () => {
             Have a project in mind? Let’s create something amazing that brings your vision to life.
           </p>
         </div>
-        
+
         <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
-          <a href="mailto:hello@avinesh.com" className="btn-primary w-full sm:w-auto inline-flex items-center justify-center gap-3">
+          <a href="mailto:jainavi.er@gmail.com" className="btn-primary w-full sm:w-auto inline-flex items-center justify-center gap-3">
             <Mail size={22} /> Email Me
           </a>
-          <a href="https://wa.me/" className="btn-outline w-full sm:w-auto inline-flex items-center justify-center gap-3">
+          <a href="https://wa.me/+919131123963" className="btn-outline w-full sm:w-auto inline-flex items-center justify-center gap-3">
             <MessageSquare size={22} /> WhatsApp
           </a>
-          <a href="https://instagram.com/" className="btn-outline w-full sm:w-auto inline-flex items-center justify-center gap-3">
-            <Camera size={22} /> Instagram
+          <a href="https://www.linkedin.com/in/aviijainm/" className="btn-outline w-full sm:w-auto inline-flex items-center justify-center gap-3">
+            <Linkedin size={22} /> LinkedIn
           </a>
         </div>
       </div>
